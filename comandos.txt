@@ -1,0 +1,26 @@
+Para instalar a versão mais recente do TypeScript:
+
+1) npm init -y
+2) npm install -g typescript
+3) npm i -D tsx
+4) npx tsc --init
+5) Crie na raiz do projeto a pasta src
+○ No tsconfig atualizar:
+No inicio inserir --> "include": ["./src"]
+No "compilerOptions" descomentar a linha --> "outDir": "./build"
+6) npx gitignore node
+7) npm i -D ts-node-dev
+8) Ajustar o package.json em "scripts" para:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "node build/index.js",
+    "build": "rimraf .build && tsc"
+ }
+9) Criar um arquivo index.ts na raiz do src
+10) Execute o código TypeScript para sua 
+compilação e execução usando o comando:
+
+Modo de Desenvolvimento: npm run dev
+Build do Projeto: npm run build
+Executar o Build: npm start

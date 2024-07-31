@@ -6,14 +6,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/index.ts",
     "start": "node build/index.js",
-    "build": "rimraf .build && tsc"
+    "build": "rimraf .build && tsc",
+    "watch": "tsc --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Curso",
+    "TypeScript"
+  ],
+  "author": "Amanda Aguiar",
   "license": "ISC",
-  "description": "",
+  "description": "Projeto realizado durante o curso de férias de Desenvolvimento BackEnd: Node.js, TypeScript, TypeORM e MySQL na Prática.",
   "devDependencies": {
     "ts-node-dev": "^2.0.0",
     "tsx": "^4.16.2"
+  },
+  "dependencies": {
+    "typescript": "^5.5.4"
   }
 }

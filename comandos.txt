@@ -1,7 +1,7 @@
 Para instalar a versão mais recente do TypeScript:
 
 1) npm init -y
-2) npm install -g typescript / npm i -G typescript (esse comando aparece nas dependências) 
+2) npm i -G typescript  
 3) npm i -D tsx
 4) npx tsc --init
 5) Crie na raiz do projeto a pasta src
@@ -18,15 +18,17 @@ No "compilerOptions" descomentar a linha --> "outDir": "./build"
     "build": "rimraf .build && tsc",
     "watch": "tsc --watch"
  }
- 9) Instalar o comando tsc --watch ( para rodar: npm run watch
-) 
+9) Instalar o comando tsc --watch (para rodar: npm run watch) 
 10) Criar um arquivo index.ts na raiz do src
 11) Execute o código TypeScript para sua 
 compilação e execução usando o comando:
-
-Modo de Desenvolvimento: npm run dev
-Build do Projeto: npm run build
-Executar o Build: npm start
-
+    Modo de Desenvolvimento: npm run dev
+    Build do Projeto: npm run build
+    Executar o Build: npm start
 12) Usar o comando após clonar um repositório: npm update
 13) O comando é usado para instalar todas as dependências: npm install
+14) Sequência para instalar o typeormnpm:
+    install typeorm --save 
+    npm install reflect-metadata --save
+    npm install @types/node --save-dev
+    npm install mysql2 --save 

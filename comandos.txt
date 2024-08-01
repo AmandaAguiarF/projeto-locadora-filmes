@@ -27,8 +27,8 @@ compilação e execução usando o comando:
     Executar o Build: npm start
 12) Usar o comando após clonar um repositório: npm update
 13) O comando é usado para instalar todas as dependências: npm install
-14) Sequência para instalar o typeormnpm:
-    install typeorm --save 
+14) Sequência para instalar o typeorm:
+    npm install typeorm --save 
     npm install reflect-metadata --save
     npm install @types/node --save-dev
     npm install mysql2 --save 

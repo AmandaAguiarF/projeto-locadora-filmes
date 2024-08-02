@@ -7,7 +7,8 @@ Comandos utilizados no Projeto Locadora de Filmes:
 5) Crie na raiz do projeto a pasta src
 6) No tsconfig atualizar:
     No inicio inserir --> "include": ["./src"]
-    No "compilerOptions" descomentar a linha --> "outDir": "./build"
+    No "compilerOptions"
+    Descomentar as linhas --> "outDir": "./build", "experimentalDecorators": true,  "emitDecoratorMetadata": true,
 7) npx gitignore node
 8) npm i -D ts-node-dev
 9) Ajustar o package.json em "scripts" para:

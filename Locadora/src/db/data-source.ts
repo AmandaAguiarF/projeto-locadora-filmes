@@ -12,7 +12,8 @@ export const AppDataSource = new DataSource({
     password: config.PASSWORD,
     database: config.DB,
     entities: [Genero, Filme],
-    synchronize: true,
+    // após usar o npm run dev pela primeira vez, trocar o synchronize para false
+    synchronize: false,
     logging: false,
 })
 

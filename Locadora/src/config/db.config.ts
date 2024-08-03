@@ -3,7 +3,7 @@ export const config = {
     PORT: 3306,
     USER: "root",
     PASSWORD: "teste",
-    DB: "adsfilmes",
+    DB: "adsFilmes",
     pool: {
         max: 5,
         min: 0,

@@ -4,7 +4,7 @@ import { Filme } from "./filme";
 @Entity({ name: 'Genero' })
 export class Genero {
     @PrimaryGeneratedColumn({ type: "int" })
-    idGenero: number;
+    idGenero?: number;
 
     @Column({ length: 45, nullable: false })
     nome: string;
@@ -12,8 +12,7 @@ export class Genero {
     @ManyToMany(() => Filme, filme => filme.generos)
     filmes?: Filme[];
 
-    constructor(id: number, nome: string) {
-        this.idGenero = id;
+    constructor(nome: string) {
         this.nome = nome;
     }
 }

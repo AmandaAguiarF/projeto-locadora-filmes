@@ -33,3 +33,8 @@ compilação e execução usando o comando:
     npm install reflect-metadata --save
     npm install @types/node --save-dev
     npm install mysql2 --save 
+16) Instalação do Express e CORS:  
+    npm i express --save
+    npm i -D @types/express
+    npm i cors --save
+    npm i -D @types/cors
